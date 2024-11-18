@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Rapport Projet INFO-F302: Calcul du nombre d'Alcuin  d'un graphe}
+\author{Luca Palmisano, Anastasia Pelzer}
+\date{Novembre 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\section{Modélisation du premier cas}
+
+La première contrainte que nous retrouvons est celle de la validité d'une configuration. C'est à dire qu'on ne peut pas avoir deux sommets dans le même ensemble s'ils forment une arête. En d'autres mots, deux éléments en conflit ne peuvent pas se retrouver sur la même rive.\\
+
+Une configuration est réprésentée comme ceci : \((b, S_0, S_1)\) \\
+
+Celle-ci est valide si \(S_1-b\) ne contient pas deux sommets tel que \({i,j} \in G(E)\).
+
+Ce qui peut se formuler de la manière suivante:\\
+
+\(\forall\  i,j \in G(E),\  \not\exists  (b, S_0, S_1)\  tq\  i,j \in S_1-b\)\\
+
+En FNC nous obtenons:\\
+
+La deuxième contrainte est celle du départ. Dans le première configuration, l = 1, b = 0 et \(S_0\) doit contenir tous les sommets.\\
+
+La troisième contrainte est celle de la fin. La dernière configuration l appartenant à {2,..,2n+2}, b = 1 et \(S_1\) doit contenir tous les sommets.\\
+
+La dernière contrainte est celle de la cardinalité. Alcuin(G) < k.
+Alcuin(S) sera égal à max de (S1 de Cl - S1 de Cl-1) pour tout l appartenant à {1,..,2n+2}, Alcuin(G) sera égal à 
+
+
+
+
+
+
+\section{Modélisation de la généralisation}
+
+\section{Modélisation de la variante Bonus}
+
+\section{Conclusion}
+
+\end{document}
